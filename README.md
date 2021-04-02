@@ -1,16 +1,17 @@
-<b>پروژه آموزشی جنگو
+<b>
+  <h3>
+  پروژه آموزشی جنگو 3
+  </h3>
 </b>
 
 <hr>
 
 ابتدا یک محیط مجازی با دستور زیر ایجاد کنید
-
 <br>
-
 <code>
 virtualenv .env
 </code>
-<br>
+
 <br>
 
 سپس آنرا فعال کنید
@@ -46,5 +47,7 @@ pip install -r requirements.txt
 <code>
 python manage.py runserver
 </code>
+
+<br>
 
 :))) هورااا

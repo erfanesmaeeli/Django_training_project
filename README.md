@@ -3,22 +3,32 @@
 
 <hr>
 
-ابتدا یک محیط مجازی با دستورزیر ایجاد کنید
+ابتدا یک محیط مجازی با دستور زیر ایجاد کنید
+
 <br>
+
 <code>
 virtualenv .env
 </code>
 
 
+<br>
 سپس آنرا فعال کنید
+
 <br>
+
 ویندوز:
+
 <br>
+
 <code>
 .env\Scripts\activate
 </code>
+
 <br>
+
 لینوکس:
+
 <br>
 
 <code>
@@ -28,7 +38,9 @@ virtualenv .env
 <br>
 
 سپس پکیج‌های مورد نیاز را نصب کنید
+
 <br>
+
 <code>
 pip install -r requirements.txt
 </code>
@@ -36,7 +48,9 @@ pip install -r requirements.txt
 <br>
 
 با دستور زیر پروژه را ران کنید
+
 <br>
+
 <code>
 python manage.py runserver
 </code>

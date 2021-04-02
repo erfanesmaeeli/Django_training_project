@@ -8,9 +8,9 @@
 
 ابتدا یک محیط مجازی با دستور زیر ایجاد کنید
 <br>
-<code>
-virtualenv .env
-</code>
+<div class="highlight highlight-source-shell">
+  <pre>$ virtualenv .env</pre>
+</div>
 
 <br>
 
@@ -20,33 +20,37 @@ virtualenv .env
 
 ویندوز:
 <br>
-<code>
-.env\Scripts\activate
-</code>
+<div class="highlight highlight-source-shell">
+  <pre>$ .env\Scripts\activate
+</pre>
+</div>
 
 <br>
 
 لینوکس:
 <br>
-<code>
-.env/bin/activate
-</code>
+<div class="highlight highlight-source-shell">
+  <pre>$ .env/bin/activate
+</pre>
+</div>
 
 <br>
 
 سپس پکیج‌های مورد نیاز را نصب کنید
 <br>
-<code>
-pip install -r requirements.txt
-</code>
+<div class="highlight highlight-source-shell">
+  <pre>$ pip install -r requirements.txt
+</pre>
+</div>
 
 <br>
 
 با دستور زیر پروژه را ران کنید
 <br>
-<code>
-python manage.py runserver
-</code>
+<div class="highlight highlight-source-shell">
+  <pre>$ python manage.py runserver
+</pre>
+</div>
 
 <br>
 

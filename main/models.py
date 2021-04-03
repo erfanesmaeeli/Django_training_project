@@ -20,6 +20,7 @@ class Blog(models.Model):
     file = models.FileField(null=True, blank=True, upload_to='blog/files/', verbose_name="فایل")
     image = models.ImageField(null=True, blank=True, upload_to='blog/images/', verbose_name="عکس")
 
+
     def __str__(self):
         return str(self.id)
     

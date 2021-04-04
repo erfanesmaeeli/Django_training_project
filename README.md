@@ -65,6 +65,16 @@
 
 <br>
 
+
+در آخر جهت انتقال فایل‌های استاتیک اپلیکیشن به روت پروژه، دستور زیر را بزنید
+<br>
+<div class="highlight highlight-source-shell">
+  <pre>$ python manage.py collectstatic
+</pre>
+</div>
+
+<br>
+
 با دستور زیر پروژه را ران کنید
 <br>
 <div class="highlight highlight-source-shell">

@@ -45,6 +45,26 @@
 
 <br>
 
+
+حال نیاز است که فایل‌های مایگریشن پروژه را ایجاد کنیم
+<br>
+<div class="highlight highlight-source-shell">
+  <pre>$ python manage.py makemigrations
+</pre>
+</div>
+
+<br>
+
+
+سپس با دستور زیر جداول مایگیریشن را در دیتابیس ایجاد میکنیم
+<br>
+<div class="highlight highlight-source-shell">
+  <pre>$ python manage.py migrate
+</pre>
+</div>
+
+<br>
+
 با دستور زیر پروژه را ران کنید
 <br>
 <div class="highlight highlight-source-shell">
@@ -54,4 +74,4 @@
 
 <br>
 
-:))) هورااا
+:)))  هورااا

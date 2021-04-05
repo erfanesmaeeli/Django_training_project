@@ -2,9 +2,13 @@
   <h3>
   پروژه آموزشی جنگو 3
   </h3>
-</b>
 
+<blockquote>
+  در این پروژه یاد میگیرم یک وب‌سایت ساده با موضوع بلاگ طراحی کنیم و برای تسریع در توسعه پروژه از یک تمپلیت آماده رایگان از فریم‌ورک بوت استرپ استفاده می‌کنیم.
+</blockquote>
+  
 <hr>
+<br>
 
 ابتدا یک محیط مجازی با دستور زیر ایجاد کنید
 <br>
@@ -60,6 +64,16 @@
 <br>
 <div class="highlight highlight-source-shell">
   <pre>$ python manage.py migrate
+</pre>
+</div>
+
+<br>
+
+
+در آخر جهت انتقال فایل‌های استاتیک اپلیکیشن به روت پروژه، دستور زیر را بزنید
+<br>
+<div class="highlight highlight-source-shell">
+  <pre>$ python manage.py collectstatic
 </pre>
 </div>
 

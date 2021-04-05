@@ -1,17 +1,12 @@
-/**
-* Template Name: Moderna - v2.2.1
-* Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Vazir", sans-serif;
   color: #444;
   text-align: right;
+}
+
+*{
+  font-family: "Vazir", sans-serif;
 }
 
 a {
@@ -24,7 +19,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6, .font-primary {
-  font-family: "Roboto", sans-serif;
+  font-family: "Vazir", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -127,7 +122,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Vazir", sans-serif;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -390,7 +385,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+  font-family: "Vazir", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -492,7 +487,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #hero-no-slider .btn-get-started {
-  font-family: "Roboto", sans-serif;
+  font-family: "Vazir", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -944,7 +939,7 @@ section {
 .facts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Vazir", sans-serif;
   font-size: 14px;
 }
 
@@ -1162,7 +1157,7 @@ section {
   font-size: 46px;
   color: #68A4C4;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Vazir", sans-serif;
   margin-bottom: 25px;
 }
 
@@ -1211,7 +1206,7 @@ section {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Vazir", sans-serif;
   transition: 0.3s;
 }
 
@@ -1278,7 +1273,7 @@ section {
   color: #444;
   transition: all 0.3s ease-in-out;
   border-bottom: 2px solid #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Vazir", sans-serif;
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
@@ -2258,7 +2253,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Vazir", sans-serif;
   color: #fff;
 }
 

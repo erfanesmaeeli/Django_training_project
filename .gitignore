@@ -101,10 +101,7 @@ ENV/
 # mypy
 .mypy_cache/
 
-.idea
-**/migrations/**
-!**/migrations
-!**/migrations/__init__.py
+
 db.sqlite3
 
 # production

@@ -11,7 +11,7 @@ STATE_TYPES = (
 
 
 class Blog(models.Model):
-    title = models.CharField(max_length=120, null=True, unique=False, verbose_name="عنوان")
+    title = models.CharField(max_length=120, null=True, unique=False, verbose_name="عنوان", help_text="توجه کنید که عنوان فارسی باشد.")
     author = models.ForeignKey(User, related_name='blogs', on_delete=models.CASCADE, null=True, verbose_name="نویسنده")
     description = models.TextField(verbose_name="توضیحات")
     price = models.IntegerField(default=0, null=True, verbose_name="قیمت")
@@ -44,3 +44,9 @@ class Comment(models.Model):
 
 
 
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="profile", verbose_name="کاربر")
+    phone = models.CharField(verbose_name="تلفن همراه", max_length=15, null=True)
+
+    def __str__(self):
+        return self.user.username

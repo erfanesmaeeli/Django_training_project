@@ -1,5 +1,5 @@
 from django.contrib import admin
-from main.models import Blog, Comment
+from main.models import Blog, Comment, Profile
 from django.utils.safestring import mark_safe
 
 
@@ -37,4 +37,5 @@ class CommentAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Comment, CommentAdmin)
+admin.site.register(Profile)
 

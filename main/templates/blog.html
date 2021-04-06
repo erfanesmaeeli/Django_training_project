@@ -3,25 +3,24 @@
 
 
 {% block title %}
-  <title>بلاگ | آموزش جنگو</title>
+  <title>بلاگ | سایت آموزشی جنگو</title>
 {% endblock title %}
 
 
 {% block css %}
-  {{block.super}}
+  {{ block.super }}
 {% endblock css %}
   
   
 {% block content %}
 <main id="main">
-
   <!-- ======= Blog Section ======= -->
   <section class="breadcrumbs">
     <div class="container">
 
       <div class="d-flex justify-content-between align-items-center">
         <ol>
-          <li><a href="index.html">بلاگ</a></li>
+          <li><a href="{% url 'blog' %}">بلاگ</a></li>
         </ol>
         <h2 class="">پست‌های بلاگ</h2>
       </div>
@@ -46,7 +45,7 @@
               </div>
 
               <h2 class="entry-title">
-                <a href="#!">{{ blog.title }}</a>
+                <a href="{% url 'blog-details' blog.id %}">{{ blog.title | truncatewords:1 }}</a>
               </h2>
 
               <div class="entry-meta">
@@ -68,7 +67,7 @@
                 {{ blog.description }}
                 </p>
                 <div class="read-more d-flex">
-                  <a href="#!" class="mr-auto">ادامه مطلب</a>
+                  <a href="{% url 'blog-details' blog.id %}" target="_blank" class="mr-auto">ادامه مطلب</a>
                 </div>
               </div>
 

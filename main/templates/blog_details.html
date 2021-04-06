@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load jformat %}
+
+{% block title %}
+	<title>{{ blog.title }}</title>
+{% endblock %}
+
+
+{% block css %}
+	{{ block.super }}
+{% endblock %}
+
+
+{% block content %}
+<main id="main">
+
+    <!-- ======= Blog Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <ol>
+            <li><a href="{% url 'blog' %}">بلاگ</a></li>
+            <li>{{ blog.title }}</li>
+          </ol>
+          <h2>جزئیات پست</h2>
+        </div>
+
+      </div>
+    </section><!-- End Blog Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <section class="blog" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8 mx-auto entries">
+
+            <article class="entry entry-single">
+              <div class="entry-img">
+                <img src="{{ blog.image.url }}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a>{{ blog.title }}</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+					<li class="d-flex align-items-center pl-4"><i class="icofont-user"></i> <a href="blog-single.html">
+					  {{ blog.author.get_full_name }}
+					  </a></li>
+					<li class="d-flex align-items-center pl-4"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">
+					{{ blog.DateCreated | jformat:" %d / %m / %Y - %H:%M" }}
+					</time></a></li>
+					<li class="d-flex align-items-center"><i class="icofont-comment"></i> <a href="blog-single.html">
+					  {{ blog.comments.all.count }} دیدگاه
+					</a></li>
+				  </ul>
+              </div>
+
+              <div class="entry-content">
+				  {{ blog.description | safe}}
+              </div>
+
+            </article><!-- End blog entry -->
+
+          </div><!-- End blog entries list -->
+
+        </div><!-- End row -->
+
+      </div><!-- End container -->
+
+    </section><!-- End Blog Section -->
+
+  </main><!-- End #main -->
+{% endblock %}
+
+
+{% block js %}
+	{{ block.super }}
+{% endblock %}
+	
+	
+	
+	
